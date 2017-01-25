@@ -1,0 +1,5 @@
+bin/mallet train-topics --input topic-input.mallet --num-topics 100 --output-state topic-state.gz
+bin/mallet train-topics --input topic-input.mallet --num-topics 100 --output-state topic-state.gz
+deepwalk --format edgelist --input /home/vijoy/deepwalk/edges.txt --output /home/vijoy/deepwalk/edges.embeddings --representation-size 2
+
+bin/mallet train-topics --input topic-input.mallet --num-topics 1 --output-topic-keys test_keys.txt --num-top-words 50
